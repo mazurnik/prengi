@@ -1,0 +1,40 @@
+.country__items {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 85px;
+
+}
+
+.country__item {
+    font-size: 14px;
+    font-family: "Roboto";
+    color: rgb(36, 36, 36);
+    font-weight: bold;
+    line-height: 1.286;
+    text-align: left;
+    // width: 200px;
+    height: 47px;
+
+    img {
+        float: left;
+    }
+
+    top: 0px;
+}
+
+.country__item-name {
+    margin-left: 40px;
+}
+
+.country__item-adress {
+    font-size: 12px;
+    font-weight: lighter;
+    margin-left: 40px;
+}
+
+.country__item-tel {
+    font-size: 12px;
+    font-weight: lighter;
+    margin-left: 40px;
+}
