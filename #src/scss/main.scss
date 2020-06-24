@@ -1,0 +1,86 @@
+.main {
+    background-image: url(../img/bg1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+    position: relative;
+
+    .main-container {
+        // position: absolute;
+        background-image: url(../img/main-tel.png);
+        background-repeat: no-repeat;
+        background-position: right bottom;
+        bottom: 0;
+        height: 700px;
+
+        // .telefon {
+        //     position: absolute;
+        //     right: 0;
+        //     bottom: 0;
+        // }
+    }
+
+}
+
+.main__header {
+    display: flex;
+    justify-content: space-between;
+
+    &-logo {
+        margin-top: 38px;
+    }
+
+    &-menu {
+        margin-top: 64px;
+
+        ul {
+            list-style: none;
+            display: flex;
+            color: #fff;
+            font-size: 13px;
+
+            li {
+                text-transform: uppercase;
+                margin-left: 45px;
+            }
+        }
+    }
+}
+
+.main-title {
+    font-size: 42px;
+    width: 600px;
+    color: #fff;
+    margin-top: 140px;
+}
+
+.main-subtitle {
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+    line-height: 1.25;
+    width: 423px;
+    height: 53px;
+    font-weight: lighter;
+    margin-top: 30px;
+}
+
+.btn {
+    left: 385px;
+    top: 524px;
+    width: 254px;
+    height: 73px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 40px;
+    background-color: #00c2f0;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+
+    &:hover {
+        border: none;
+    }
+}
