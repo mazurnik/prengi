@@ -1,0 +1,26 @@
+.advanteges__items {
+margin-top: 80px;
+}
+
+.row{
+    display: flex;
+}
+
+.advanteges__item {
+    width: 360px;
+    height: 255px;
+    background-image: url(../img/adv/adv1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    p{
+        font-size: 18px;
+        font-weight: 300;
+        color: #393939;
+        line-height: 1.444;
+        text-align: center;
+        width: 235px;
+        height: 43px;
+        margin-top: 180px;
+    }
+}

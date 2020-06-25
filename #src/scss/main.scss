@@ -25,6 +25,7 @@
 .main__header {
     display: flex;
     justify-content: space-between;
+    font-weight: 400;
 
     &-logo {
         margin-top: 38px;
@@ -44,11 +45,16 @@
                 margin-left: 45px;
             }
         }
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
     }
 }
 
 .main-title {
     font-size: 42px;
+    font-weight: 900;
     width: 600px;
     color: #fff;
     margin-top: 140px;
@@ -56,12 +62,16 @@
 
 .main-subtitle {
     font-size: 24px;
+    font-weight: 100;
     color: rgb(255, 255, 255);
     line-height: 1.25;
     width: 423px;
     height: 53px;
     font-weight: lighter;
     margin-top: 30px;
+    span{
+        font-weight: 400;
+    }
 }
 
 .btn {
