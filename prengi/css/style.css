@@ -188,17 +188,29 @@
 }
 
 .advanteges__items {
-  margin-top: 80px;
+  margin: 80px 0px;
+  text-align: center;
+}
+
+.advanteges__items h1 {
+  margin: 35px 0 38px 0;
+  font-size: 48px;
+  line-height: 48/30;
+  font-weight: 700;
+}
+
+.advanteges__items img {
+  margin-top: 30px;
 }
 
 .row {
   display: flex;
+  justify-content: space-between;
 }
 
 .advanteges__item {
   width: 360px;
   height: 255px;
-  background-image: url(../img/adv/adv1.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -210,13 +222,14 @@
   color: #393939;
   line-height: 1.444;
   text-align: center;
-  width: 235px;
   height: 43px;
   margin-top: 180px;
+}
+
+.advanteges__item p span {
+  font-weight: 700;
 }
 
 .webp .main { background-image: url(../img/bg1.webp); }
 
 .webp .main .main-container { background-image: url(../img/main-tel.webp); }
-
-.webp .advanteges__item { background-image: url(../img/adv/adv1.webp); }
