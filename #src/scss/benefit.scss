@@ -1,0 +1,44 @@
+.benefit__items {
+    margin: 80px 0px;
+    text-align: center;
+
+    h1 {
+        margin: 35px 0 38px 0;
+        font-size: 48px;
+        line-height: 48/30;
+        font-weight: 700;
+    }
+
+    img {
+        margin-top: 30px;
+    }
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.benefit__item {
+    width: 360px;
+    height: 255px;
+    // background-image: url(../img/adv/adv1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    p {
+        font-size: 18px;
+        font-weight: 300;
+        color: #393939;
+        line-height: 1.444;
+        text-align: center;
+        // width: 240px;
+        height: 43px;
+        margin-top: 180px;
+
+        span {
+            font-weight: 700;
+        }
+    }
+}
