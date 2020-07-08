@@ -312,13 +312,71 @@ h2 {
   top: 0;
 }
 
+.go {
+  margin: 80px 0 80px 0;
+  text-align: center;
+}
+
+.go h3 {
+  margin-top: 75px;
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.footer {
+  background-color: #0082a1;
+  color: #fff;
+  padding: 50px 0 40px 0;
+}
+
+.footer__columns {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 45px;
+  border-bottom: 1px #4da8bd solid;
+}
+
+.footer__column ul {
+  list-style: none;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.7;
+}
+
+.footer__column ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer__column:first-child {
+  max-width: 380px;
+}
+
+.footer__column-name {
+  font-size: 16px;
+  font-weight: 700;
+}
+
 .footer__column-logo {
   width: 180px;
-  height: 70px;
+  height: 60px;
+  margin: 20px 0 20px 0;
 }
 
 .footer__column-logo picture {
   height: 70px;
+}
+
+.footer__column-text {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.allrights {
+  text-align: center;
+  margin-top: 38px;
+  font-size: 13px;
+  font-weight: 300;
 }
 
 .webp .main { background-image: url(../img/bg1.webp); }
