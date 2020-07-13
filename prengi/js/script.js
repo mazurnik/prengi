@@ -1,5 +1,5 @@
-import 'slick.min.js';
-// import 
+'use strict'
+// import 'slick.min.js';
 window.addEventListener('DOMContentLoaded', () => {
   function testWebP(callback) {
     var webP = new Image();
@@ -18,21 +18,21 @@ window.addEventListener('DOMContentLoaded', () => {
     }
   });
 
+
+  // let slider = document.querySelector('solution__slider');
+  // slider.slick({
+  //   speed: 700,
+  //   autoplay: true,
+  //   // prevArrow: '<img class ="slick-prev" src="img/arr-left.png" alt="slide">',
+  //   // nextArrow: '<img class="slick-next" src="img/arr-right.png">',
+  // });
+  // $(document).ready(function () {
   $('.solution__slider').slick({
     speed: 700,
-    // autoplay: true,
+    autoplay: true,
     // prevArrow: '<img class ="slick-prev" src="img/arr-left.png" alt="slide">',
     // nextArrow: '<img class="slick-next" src="img/arr-right.png">',
   });
-
+  // });
 
 })
-
-$(document).ready(function () {
-  $('.solution__slider').slick({
-    speed: 700,
-    // autoplay: true,
-    // prevArrow: '<img class ="slick-prev" src="img/arr-left.png" alt="slide">',
-    // nextArrow: '<img class="slick-next" src="img/arr-right.png">',
-  });
-});
