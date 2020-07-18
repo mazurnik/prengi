@@ -1,5 +1,4 @@
 'use strict'
-// import 'slick.min.js';
 window.addEventListener('DOMContentLoaded', () => {
   function testWebP(callback) {
     var webP = new Image();
@@ -18,21 +17,43 @@ window.addEventListener('DOMContentLoaded', () => {
     }
   });
 
+  //native slider
 
-  // let slider = document.querySelector('solution__slider');
-  // slider.slick({
-  //   speed: 700,
-  //   autoplay: true,
-  //   // prevArrow: '<img class ="slick-prev" src="img/arr-left.png" alt="slide">',
-  //   // nextArrow: '<img class="slick-next" src="img/arr-right.png">',
-  // });
-  // $(document).ready(function () {
-  $('.solution__slider').slick({
-    speed: 700,
-    autoplay: true,
-    // prevArrow: '<img class ="slick-prev" src="img/arr-left.png" alt="slide">',
-    // nextArrow: '<img class="slick-next" src="img/arr-right.png">',
+  let slideIndex = 1;
+  const slides = document.querySelectorAll('.solution__slider-item'),
+    prev = document.querySelector('.solution__slider-prev'),
+    next = document.querySelector('.solution__slider-next');
+
+  showSlides(slideIndex);
+
+  function showSlides(n) {
+    if (n > slides.length) {
+      slideIndex = 1;
+    }
+    if (n < 1) {
+      slideIndex = slides.length;
+    }
+
+    slides.forEach((item) => item.style.display = 'none');
+
+    slides[slideIndex - 1].style.display = 'block';
+
+  }
+
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  showSlides(slideIndex);
+
+  prev.addEventListener('click', function () {
+    plusSlides(-1);
   });
-  // });
 
-})
+  next.addEventListener('click', function () {
+    plusSlides(1);
+  });
+
+
+  // showSlides(slideIndex);
+
+});

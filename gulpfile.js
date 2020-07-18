@@ -99,12 +99,11 @@ function js() {
   return src(path.src.js)
     .pipe(fileinclude())
     .pipe(dest(path.build.js))
-    .pipe(uglify())
     .pipe(
       rename({
         extname: ".min.js",
-      })
-    )
+      }))
+    .pipe(uglify())
     .pipe(dest(path.build.js))
     .pipe(browsersync.stream());
 }
